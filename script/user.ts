@@ -1,60 +1,64 @@
 "use strict";
-(function (core) {
-    class user {
-        constructor(displayName = "", emailAddress = "", userName = "", password = "") {
-            this.DisplayName = displayName;
-            this.EmailAddress = emailAddress;
-            this.UserName = userName;
-            this.Password = password;
+namespace core {
+    export class user {
+        private m_displayName: string;
+        private m_emailAddress: string;
+        private m_userName: string;
+        private m_password: string;
+        constructor(displayName:string = "", emailAddress:string = "", userName:string = "", password:string = "") {
+            this.m_displayName = displayName;
+            this.m_emailAddress = emailAddress;
+            this.m_userName = userName;
+            this.m_password = password;
         }
 
 
         //getters and setters
-        get DisplayName() {
+        public get DisplayName():string {
             return this.m_displayName;
         }
 
-        set DisplayName(displayName) {
+        public set DisplayName(displayName:string) {
             this.m_displayName = displayName;
         }
 
-        get EmailAddress() {
+        public get EmailAddress():string {
             return this.m_emailAddress;
         }
 
-        set EmailAddress(emailAddress) {
+        public set EmailAddress(emailAddress:string) {
             this.m_emailAddress = emailAddress;
         }
 
-        get UserName() {
+        public get UserName() :string{
             return this.m_userName;
         }
 
-        set UserName(userName) {
+        public set UserName(userName:string) {
             this.m_userName = userName;
         }
 
-        get Password() {
+        public get Password() :string{
             return this.m_password;
         }
 
-        set Password(password) {
+        public set Password(password:string) {
             this.m_password = password;
         }
 
-        toString() {
+        public toString():string {
             return `DisplayName: ${this.DisplayName}\n EmailAddress: ${this.EmailAddress} \n UserName: ${this.UserName}`;
         }
-        toJSON(){
+       public toJSON():{UserName:String,DisplayName:String,EmailAddress:String,Password:String}{
             return{
-                "DisplayName" : this.DisplayName,
-                "EmailAddress" : this.EmailAddress,
-                "UserName" : this.UserName,
-                "Password" : this.Password
+                "DisplayName" : this.m_displayName,
+                "EmailAddress" : this.m_emailAddress,
+                "UserName" : this.m_userName,
+                "Password" : this.m_password
             }
         }
 
-        fromJSON(data){
+        public fromJSON(data:user){
             this.DisplayName = data.DisplayName;
             this.EmailAddress = data.EmailAddress;
             this.UserName = data.UserName;
@@ -63,7 +67,7 @@
 
 
         //Serialize utility method
-        serialize() {
+        public serialize():string|null {
             if (this.DisplayName != "" && this.EmailAddress != "" && this.UserName != ""&& this.Password != "") {
                 return `${this.DisplayName}, ${this.EmailAddress}, ${this.UserName}, ${this.Password}`;
             }
@@ -72,7 +76,7 @@
         }
 
         //deserialize utility method.
-        deserialize(data) {
+        public deserialize(data:string) {
             let propertyArray = data.split(",");
             this.DisplayName = propertyArray[0];
             this.EmailAddress = propertyArray[1];
@@ -80,7 +84,6 @@
             this.Password = propertyArray[3];
         }
     }
-    core.User = user;
 
-})
-(core || (core = {}));
+
+}
