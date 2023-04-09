@@ -1,0 +1,22 @@
+{
+  "contacts": [
+
+    {
+      "DisplayName" :  "Peter Parker",
+      "Contact Number" : "905-123-4567",
+      "EmailAddress" : "pparker@domain.ca"
+    },
+
+    {
+      "DisplayName" :  "Bruce Wayne",
+      "Contact Number" : "410-212-3434",
+      "EmailAddress" : "bwayne@domain.ca"
+    },
+
+    {
+      "DisplayName" :  "Diana Prince",
+      "Contact Number" : "209-909-1212",
+      "EmailAddress" : "dprince@domain.ca"
+    }
+  ]
+}
