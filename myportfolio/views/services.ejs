@@ -1,0 +1,114 @@
+<!--
+//Name: Vishwa Patel, Hifza Hameed
+//File: services.ejs
+//Date: 13th april, 2023
+//Student id:100851337, 100833037
+-->
+<%- include('partials/services') %>
+<%- include('./partials/header', {app: app_const, session, title: "Our Services" }); %>
+    <style>
+        body {
+            background-color: #FFF;
+        }
+    </style>
+
+    <header class="main_header">
+        <h1> Our Services </h1>
+    </header>
+
+    <!-- Page content-->
+    <main>
+
+
+        <section>
+
+            <div class="container">
+
+                <div class="service">
+                    <h3>General Computer Programming</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/programming.webp">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Custom software development: Building software applications tailored to meet the specific needs of clients or users.
+                            </p><p>We are so varsatile and use different programming languages that suite the job</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>Mobile app development</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/mobile-app.webp">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Developing mobile applications for iOS and Android devices using programming languages such as Swift, Kotlin, React Native and Java.</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>Database development and management</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/Database-Management-System.jpg">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Designing and implementing databases using programming languages such as SQL and NoSQL to store and manage large amounts of data.</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>Maintenance and support</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/maintenance.jfif">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Providing ongoing maintenance and support for software applications, websites, and databases to ensure they remain functional and up-to-date.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="service">
+                    <h3>Graphic design</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/graphics.jfif">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Creating visually appealing designs for logos, marketing materials, and other graphic design projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>UX/UI design</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="img/services/ux-ui.jfif">
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <p>Designing user experiences and interfaces for software applications and websites to create engaging and visually appealing user experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                
+
+
+
+
+
+            </div>
+            <br><br><br>
+        </section>
+    </main>
+
+    <%- include('./partials/footer', {app: app_const}); %>

@@ -1,0 +1,53 @@
+<!--
+//Name: Vishwa Patel, Hifza Hameed
+//File: footer.ejs
+//Date: 13th april, 2023
+//Student id:100851337, 100833037
+-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="/img/logo.png" style="min-width:120px">
+                <h3><%- app.site_name %></h3>
+                <br>
+                <a href="mailto:<%= app.site_email %>"><span class="fa fa-envelope"></span>
+                    <%= app.site_email %>
+                </a>
+                <br><br>
+                <a href="tel:<%= app.site_phone %>"><span class="fa fa-phone"></span> <%- app.site_phone %></a>
+                <br> <br>
+                <p><span class="fa fa-map-marker"></span> <%- app.site_address %></p>
+            </div>
+            <div class="col-6 ft-service">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><span class="fa fa-check"></span>General Computer Programming</li>
+                    <li><span class="fa fa-check"></span> Website Developer</li>
+                    <li><span class="fa fa-check"></span> Mobile Apps Developer</li>
+                    <li><span class="fa fa-check"></span> Database Management System</li>
+                    <li><span class="fa fa-check"></span> Graphic design</li>
+                    <li><span class="fa fa-check"></span> UX/UI design</li>
+                    <li><span class="fa fa-check"></span> Data Analysis</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Jquery file -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- slick carousel js -->
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>

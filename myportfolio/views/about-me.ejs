@@ -1,0 +1,41 @@
+<!--
+//Name: Vishwa Patel, Hifza Hameed
+//File: about-me.ejs
+//Date: 13th april, 2023
+//Student id:100851337, 100833037
+-->
+<%- include('partials/about-me') %>
+<%- include('./partials/header', {app: app_const, session, title: "About Me"}); %>
+<style>
+    body {
+        background-color: #FFF;
+    }
+</style>
+
+<header class="main_header">
+    <h1> About Me </h1>
+</header>
+
+<!-- Page content-->
+<main>
+
+
+    <section>
+
+        <div class="container">
+
+
+            <div class="about-me my-5">
+                <img src="img/user.jpg">
+                <p>I am a multi-skilled professional with expertise in website development, database design, graphics design, and IT tech support.</p>
+                <p>With years of experience, I excel at creating visually appealing websites, designing robust databases, creating engaging graphics, and providing IT support.</p>
+                <p>I am passionate about technology and committed to delivering high-quality solutions that meet my clients' needs.</p>
+                <div class="m-5 text-center"><a class="btn btn-main px-5" href="/contact-me">Contact Me</a></div>
+            </div>
+     
+     
+        </div>
+    </section>
+</main>
+
+<%- include('./partials/footer', {app: app_const}); %>

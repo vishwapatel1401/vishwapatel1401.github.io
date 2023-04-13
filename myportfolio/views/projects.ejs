@@ -1,0 +1,97 @@
+<!--
+//Name: Vishwa Patel, Hifza Hameed
+//File: projects.ejs
+//Date: 13th april, 2023
+//Student id:100851337, 100833037
+-->
+<%- include('partials/projects') %>
+<%- include('./partials/header', {app: app_const, session, title: "My Projects" }); %>
+    <style>
+        body {
+            background-color: #FFF;
+        }
+    </style>
+
+    <header class="main_header">
+        <h1> My Projects </h1>
+    </header>
+
+    <!-- Page content-->
+    <main>
+
+
+        <section>
+
+            <div class="container">
+
+
+                <div class="project">
+                    <h2>Quiz App</h2>
+                    <div class="source_code"><a target="_blank" href="https://github.com/WebDevSimplified/JavaScript-Quiz-App">View on GitHub</a></div>
+                    <div class="prj_img">
+                        <img src="img/projects/quiz.png">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span> Skills Utilized: </span>
+                        <div><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                    <div class="prj_desc">
+                        <p>
+                            An interesting Quiz Application which is very interactive and user friendly. <br>
+                            It has the ability to give a score to the user at the end of the game, if the score is above
+                            a threshold value, a player can be declare a winner, using some gifs corresponding to winning
+                            and losing the game.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h2>Temperature Converter Website</h2>
+                    <div class="source_code"><a target="_blank" href="https://temperatureconverter.netlify.com/">View Demo</a></div>
+                    <div class="prj_img">
+                        <img src="img/projects/Temperature-Converter.png">
+                        <div>
+                            <img src="img/projects/temp_converter.png">
+                            <img src="img/projects/temp_converter2.png">
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span> Skills Utilized: </span>
+                        <div><span>Input Validation</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                    <div class="prj_desc">
+                        <p>Converts temperature (in C, F or K) to other units.</p>
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <h2>Restaurant Website</h2>
+                    <div class="source_code"><a target="_blank" href="https://yaninatrekhleb.github.io/restaurant-website/">View Demo</a></div>
+                    <div class="prj_img">
+                        <img src="img/projects/restaurant.gif">
+                        <div>
+                            <img src="img/projects/foodie2.png">
+                            <img src="img/projects/foodie.png">
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span> Skills Utilized: </span>
+                        <div><span>MySQL</span><span>PHP</span><span> Responsiveness</span></span><span>UX design</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                    <div class="prj_desc">
+                        <p>A Responsive website for Restaurant. Coolect users orders and show menus </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <br><br><br>
+        </section>
+    </main>
+
+    <%- include('./partials/footer', {app: app_const}); %>

@@ -1,0 +1,67 @@
+<!--
+//Name: Vishwa Patel, Hifza Hameed
+//File: register.ejs
+//Date: 13th april, 2023
+//Student id:100851337, 100833037
+-->
+<%- include('partials/sign-up') %>
+<%- include('./partials/header', {app: app_const, session, title: "Sign Up"}); %>
+<style>
+    body {
+        background-color: #FFF;
+    }
+</style>
+
+<header class="main_header">
+    <h1> Sign Up </h1>
+</header>
+
+<!-- Page content-->
+<main>
+    <section>
+
+        <div class="container">
+            <div class="cform">
+                <div class="cform_wrapper">
+                        <form id="cform" action="" method="POST" onsubmit="sign_up_form(event)">
+                            <span class="aformError"></span>
+                            <div class="form-group">
+                                <label for="username"><b>Username</b></label>
+                                <input  required class="form-control"  placeholder="Enter Username" id="username" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><b>Email</b></label>
+                                <input  required class="form-control" type="email" placeholder="Enter Email" id="email" name="email" type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fname"><b>First Name</b></label>
+                                <input required class="form-control" placeholder="Enter First Namel" id="fname" name="fname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fname"><b>Last Name</b></label>
+                                <input required class="form-control" placeholder="Enter Last Namel" id="lname" name="lname">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"><b>Password</b></label>
+                                <input required class="form-control" type="password" placeholder="Enter Password" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2"><b>Repeat Password</b></label>
+                                <input required class="form-control" type="password" placeholder="Repeat Password" id="password2" name="password2" required>
+                            </div>
+                            <div class="form-group" id="sbutton">
+                                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up</button>
+                            </div>
+
+                        </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+<%- include('./partials/footer', {app: app_const}); %>
